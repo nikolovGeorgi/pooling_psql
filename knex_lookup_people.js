@@ -1,5 +1,5 @@
 const args = process.argv[2];
-const knex = require('./knexfile');
+const knex = require('./knex_settings');
 knex.select('*')
 .from('famous_people')
 .where('first_name', '=', args)
